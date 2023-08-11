@@ -15,7 +15,7 @@ void instruct(bool entered_shop, std::vector<std::string> items, std::vector<int
         can_trade = true;
         can_sell = true;
         std::cout << "Which item would you like to purchase?" << std::endl;
-        for(int i=0;i<sizeof(items)/sizeof(items[0]);i++){
+        for(int i=0;i<items.size();i++){
             std::cout << "(" << i+1 << ") " << items[i] << " ";
         }
     }
