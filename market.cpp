@@ -3,7 +3,7 @@
 
 // Note that index1 and index2 in markt::trade() are for the respective items' indices in the Dictionary (basically an official, in-game ID System)
 // the want_to[] arrays must be seperated for each function (i.e. the want_to[] in purchase will be want_to_purchase[])
-// considering to use C dynamic array...
+// considering to use C dynamic array for all the market functions
 void markt::shop(bool entered_shop){
     std::cout << "You've entered the shop" << std::endl;
     entered_shop = true;
