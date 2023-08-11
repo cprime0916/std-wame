@@ -1,6 +1,7 @@
 #include <bits/stdc++.h>
 int main(){
-    while(true){
+    bool game_loop = true;
+    while(game_loop){
         
     }
 }
