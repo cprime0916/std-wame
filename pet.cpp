@@ -80,7 +80,7 @@ void pet::command_pet(const std::string& pet, int mode, int xp, bool& stay, bool
     }
 }
 
-void utk(const std::string& pet, int pet_level, char rarity, int& o_health) {
+void pet::utk(const std::string& pet, int pet_level, char rarity, int& o_health) {
     int r = 0, dmg = 0;
     if (rarity == 'c') r = 20;
     else if (rarity == 'u') r = 15;
@@ -94,7 +94,7 @@ void utk(const std::string& pet, int pet_level, char rarity, int& o_health) {
     o_health -= dmg;
 }
 
-void feed(const std::string& pet, const std::string& food, bool want_to[], bool have_in_invn[], int index, int& salv) {
+void pet::feed(const std::string& pet, const std::string& food, bool want_to[], bool have_in_invn[], int index, int& salv) {
     int f = food[0] - '0';
     if (want_to[index] && have_in_invn[index]) {
         salv += f;
@@ -105,7 +105,7 @@ void feed(const std::string& pet, const std::string& food, bool want_to[], bool 
     }
 }
 
-void free_pet(const std::string& pet, std::map<std::string, bool>& taming_list, bool& game_loop) {
+void pet::free_pet(const std::string& pet, std::map<std::string, bool>& taming_list, bool& game_loop) {
     std::this_thread::sleep_for(std::chrono::seconds(1));
     std::cout << "Are you sure you want to free " << pet << "?" << std::endl;
     std::this_thread::sleep_for(std::chrono::seconds(1));
