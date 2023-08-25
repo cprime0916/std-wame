@@ -7,6 +7,11 @@ data = {
 "pet_num": 255
 }
 
+amrs = {
+    "c.sword": 2,
+    "l.wand": 3
+}
+
 for var in data["username"]:
     if ord(var) <= 15:
         print("0", end="")
@@ -31,3 +36,7 @@ print(hex(data["weapon_num"])[2:].upper(), end="")
 if data["pet_num"] <= 15:
     print("0", end="")
 print(hex(data["pet_num"])[2:].upper(), end="")
+
+amr_keys = amrs.keys()
+for amr in amr_keys:
+    amrs[amr] = 0
