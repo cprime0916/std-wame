@@ -11,6 +11,7 @@ int main(){
                 // game code
             } catch(const std::exception& e){
                 std::cout << "Error 102: Unexecutable Console" << std::endl;
+                break;
             }
         }
     }
