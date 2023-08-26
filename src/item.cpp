@@ -169,3 +169,7 @@ void item::empty(std::vector<std::string>& items, bool item_mode, bool& game_loo
         std::cout << "Error 303: Unsuccessful Deleting Operation" << std::endl;
     }
 }
+
+void item::end(bool& item_mode){
+    item_mode = false;
+}
