@@ -158,7 +158,7 @@ void item::empty(std::vector<std::string>& items, bool item_mode, bool& game_loo
         if(ans == "Y"){
             items.clear();
             std::this_thread::sleep_for(std::chrono::seconds(1));
-            std::cout << "I am sorry for your lost..." << std::endl;
+            std::cout << "I am sorry for your loss..." << std::endl;
         } else if(ans == "n"){
             std::this_thread::sleep_for(std::chrono::seconds(1));
             std::cout << "Smart choice..." << std::endl;
