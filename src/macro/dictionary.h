@@ -44,7 +44,6 @@
 #define HAMBURGER "$041"
 #define COD "$042"
 #define SALMON "$043"
-
 class dict{
     public:
         std::string dictionary[43] = {KNIFE, SWORD, WBRANCH, AX, RIFLE, TRIDENT, WAND, EGG, COMMON_EGG, UNCOMMON_EGG, RARE_EGG, EPIC_EGG,
