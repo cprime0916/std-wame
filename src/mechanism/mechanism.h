@@ -2,9 +2,8 @@
 #define MECHANISM_H
 #include <iostream>
 #include <string>
-class mech{
-    public:
-        void load();
-        void save();
-};
+namespace mech{
+    void load();
+    void save();
+}
 #endif

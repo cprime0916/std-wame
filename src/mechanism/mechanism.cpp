@@ -1,9 +1,11 @@
 #include "mechanism.h"
 
-void mech::load(){
-    
-}
+namespace mech {
+    void load() {
 
-void mech::save(){
-    
+    }
+
+    void save() {
+
+    }
 }
