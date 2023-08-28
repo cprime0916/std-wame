@@ -4,7 +4,7 @@
 #include <string>
 class mech{
     public:
-        void load(std::string what_the_fuck_am_I_doing);
+        void load();
         void save();
 };
 #endif
